@@ -1,0 +1,6 @@
+# chmod in init.capri*.rc (for bkmgrd)
+allow init mmc_block_device:blk_file setattr;
+allow init radio_device:blk_file setattr;
+
+# insmod
+allow init self:capability sys_module; # TODO: want sys_ptrace too
