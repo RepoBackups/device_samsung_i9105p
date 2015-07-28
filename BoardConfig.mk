@@ -60,6 +60,9 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DREFBASE_JB_MR1_COMPAT_SYMBO
 # healthd
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.capri
 
+# jemalloc causes a lot of random crash on free()
+MALLOC_IMPL := dlmalloc
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
 TARGET_KERNEL_CONFIG := cyanogenmod_i9105p_defconfig
