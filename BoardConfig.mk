@@ -46,6 +46,10 @@ BOARD_KERNEL_PAGESIZE := 4096
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9105p/ramdisk/fstab.capri_ss_s2vep
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_HAS_LARGE_FILESYSTEM := true
+TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # NFC
 BOARD_NFC_HAL_SUFFIX := capri
