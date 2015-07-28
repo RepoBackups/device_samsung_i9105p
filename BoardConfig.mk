@@ -15,6 +15,14 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a9
 TARGET_CPU_SMP := true
 
+# Hardware rendering
+USE_OPENGL_RENDERER := true
+BOARD_EGL_CFG := device/samsung/galaxys2plus-common/configs/egl.cfg
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+BOARD_USE_MHEAP_SCREENSHOT := true
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DREFBASE_JB_MR1_COMPAT_SYMBOLS -DCAPRI_HWC
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
 TARGET_KERNEL_CONFIG := cyanogenmod_i9105p_defconfig
