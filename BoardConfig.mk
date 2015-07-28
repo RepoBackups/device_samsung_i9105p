@@ -40,6 +40,9 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DREFBASE_JB_MR1_COMPAT_SYMBO
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
 TARGET_KERNEL_CONFIG := cyanogenmod_i9105p_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 mem=832M@0xA2000000 androidboot.console=ttyS0 vc-cma-mem=0/176M@0xCB000000
+BOARD_KERNEL_BASE := 0xa2000000
+BOARD_KERNEL_PAGESIZE := 4096
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9105p/ramdisk/fstab.capri_ss_s2vep
