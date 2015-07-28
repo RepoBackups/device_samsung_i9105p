@@ -5,6 +5,17 @@ LOCAL_PATH := device/samsung/i9105p
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+# Audio
+PRODUCT_PACKAGES += \
+	audio.a2dp.default \
+	audio.usb.default \
+	audio.r_submix.default
+
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
+
+USE_CUSTOM_AUDIO_POLICY := 1
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/gps.cer:system/bin/gps.cer \
