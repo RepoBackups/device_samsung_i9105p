@@ -1,7 +1,24 @@
 Scripts and patches to build ROMs for S II Plus
 
-How to get:
-Run "git clone https://github.com/andixlm/android_build-tools_galaxys2plus-common build-tools" in root of ROM sources directory.
+What is Patches?
+Since the Samsung Galaxy SII Plus is similar to Samsung Galaxy Grand i9082  both of them are based on "Capri"
+board and bootloader, so they got the "unofficial" builds of CyanogenMod just because for these patches that have the modifications
+to boot Lollipop roms.
+
+What can fix?
+-Boot.
+-Bluetooth.
+-RIL.
+-Camera and Some features Settings.
+
+How to apply Patches? "For Developers only"
+-Once download the repo, copy the folder called "patches" to the root of source.
+-Rename to build-tools.
+-From terminal, cd to build-tools
+-Fix permissions for patch file with chmod a+x patch.
+-Run ./patch (Patching source should done without problems because are same one used for CyanogenMod, i just remove
+the useless ones to not have any problems.
+
 
 Description of scripts:
 resync - reset all changes in ROM sources, sync and get prebuilts. Use "-o" to reset changes only.
@@ -13,3 +30,4 @@ build - build ROM. It asks for cleaning of out directory (make clean) and device
 Credits:
 pawitp - patches
 luk1337 - initial implementation of scripts
+haky86 - to adapt patches for CandyRoms
