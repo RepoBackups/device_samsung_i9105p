@@ -39,3 +39,18 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
         frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
         frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+		
+# Wi-Fi
+PRODUCT_PACKAGES += \
+	hostapd \
+	dhcpcd.conf \
+	wpa_supplicant \
+	wpa_supplicant.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	wifi.interface=wlan0
+
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+
+$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)		
