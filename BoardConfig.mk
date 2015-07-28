@@ -137,4 +137,5 @@ BOARD_SEPOLICY_UNION += \
     vclmk.te \
     vold.te
 	
-	
+# Inherit from the proprietary version
+-include vendor/samsung/galaxys2plus-common/BoardConfigVendor.mk	
