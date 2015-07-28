@@ -16,6 +16,10 @@ PRODUCT_COPY_FILES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# Camera, this will fix Video Recording
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/camera/recording.xml:system/etc/media_codecs_ffmpeg.xml
+
 # CandyRoms Animation Boot
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/480.zip:systen/media/bootanimation.zio
