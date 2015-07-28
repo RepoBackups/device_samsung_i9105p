@@ -3,8 +3,8 @@ USE_CAMERA_STUB := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/galaxys2plus-common/bluetooth/libbt_vndcfg.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxys2plus-common/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9105p/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9105p/bluetooth
 
 # Board
 TARGET_BOARD_PLATFORM := capri
@@ -47,14 +47,14 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 262144
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/galaxys2plus-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9105p/include
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/samsung/galaxys2plus-common/cmhw/
+BOARD_HARDWARE_CLASS := device/samsung/i9105p/cmhw/
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/galaxys2plus-common/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/i9105p/configs/egl.cfg
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 BOARD_USE_MHEAP_SCREENSHOT := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -84,7 +84,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/galaxys2plus-common/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/i9105p/ril/
 
 # SkTextBox for libtvout
 BOARD_USES_SKTEXTBOX := true
