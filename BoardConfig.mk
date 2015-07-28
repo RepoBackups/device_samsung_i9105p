@@ -13,6 +13,10 @@ TARGET_BOARD_PLATFORM := capri
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := capri
 
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
+
 # CPU
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
