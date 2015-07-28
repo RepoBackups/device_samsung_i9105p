@@ -1,5 +1,8 @@
 USE_CAMERA_STUB := true
 
+# Board
+TARGET_BOARD_PLATFORM := capri
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
 TARGET_KERNEL_CONFIG := cyanogenmod_i9105p_defconfig
