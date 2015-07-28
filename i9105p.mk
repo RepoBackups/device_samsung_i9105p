@@ -16,6 +16,12 @@ PRODUCT_COPY_FILES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# Samsung Galaxy SII Plus Packages
+PRODUCT_PACKAGES += \
+	SamsungServiceMode \
+	charger_res_images \
+	com.android.future.usb.accessory
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/gps.cer:system/bin/gps.cer \
