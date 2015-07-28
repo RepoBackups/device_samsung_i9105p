@@ -70,6 +70,9 @@ BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 mem=832M@0xA2000000 androidboot.c
 BOARD_KERNEL_BASE := 0xa2000000
 BOARD_KERNEL_PAGESIZE := 4096
 
+# Logging
+TARGET_USES_LOGD := false
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/i9105p/ramdisk/fstab.capri_ss_s2vep
 BOARD_HAS_NO_SELECT_BUTTON := true
