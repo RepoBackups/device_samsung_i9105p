@@ -32,6 +32,15 @@ PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/ramdisk/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
 	$(COMMON_PATH)/ramdisk/init.log.rc:root/init.log.rc
 	
+# Keylayouts
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/keylayouts/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	$(COMMON_PATH)/keylayouts/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	$(COMMON_PATH)/keylayouts/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	$(COMMON_PATH)/keylayouts/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	$(COMMON_PATH)/keylayouts/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
+	$(COMMON_PATH)/keylayouts/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl	
+	
 # Media
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
