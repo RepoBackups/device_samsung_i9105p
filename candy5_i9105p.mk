@@ -1,11 +1,11 @@
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/candy5/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candy5/config/nfc_enhanced.mk)
 
 $(call inherit-product, device/samsung/i9105p/full_i9105p.mk)
 
 PRODUCT_DEVICE := i9105p
-PRODUCT_NAME := cm_i9105p
+PRODUCT_NAME := candy5_i9105p
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/i9105p/overlay-candy
 
