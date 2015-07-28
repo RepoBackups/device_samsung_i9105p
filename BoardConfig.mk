@@ -1,5 +1,3 @@
-# Include common BoardConfig
--include device/samsung/galaxys2plus-common/BoardConfigCommon.mk
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
