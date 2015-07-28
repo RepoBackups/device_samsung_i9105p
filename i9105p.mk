@@ -5,6 +5,12 @@ LOCAL_PATH := device/samsung/i9105p
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+
+# Use high-density artwork where available
+PRODUCT_LOCALES += hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
