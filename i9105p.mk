@@ -81,6 +81,16 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
         frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 		
+# Delegation for OEM customization
+PRODUCT_OEM_PROPERTIES := \
+    ro.config.ringtone \
+    ro.config.notification_sound \
+    ro.config.alarm_alert \
+    ro.config.wallpaper \
+    ro.config.wallpaper_component \
+    ro.oem.* \
+    oem.*		
+		
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
