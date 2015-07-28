@@ -29,6 +29,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404002816
 BOARD_CACHEIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 262144
 
+# Hardware
+BOARD_HARDWARE_CLASS := device/samsung/galaxys2plus-common/cmhw/
+
 # Hardware rendering
 USE_OPENGL_RENDERER := true
 BOARD_EGL_CFG := device/samsung/galaxys2plus-common/configs/egl.cfg
