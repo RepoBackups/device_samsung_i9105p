@@ -83,6 +83,9 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_stora
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/galaxys2plus-common/ril/
 
+# SkTextBox for libtvout
+BOARD_USES_SKTEXTBOX := true
+
 # NFC
 BOARD_NFC_HAL_SUFFIX := capri
 
