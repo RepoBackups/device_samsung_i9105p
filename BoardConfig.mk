@@ -1,3 +1,4 @@
+USE_CAMERA_STUB := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys2plus-common
