@@ -16,6 +16,11 @@ PRODUCT_COPY_FILES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# CandyRoms Animation Boot
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/480.zip:systen/media/bootanimation.zio
+
+
 # Samsung Galaxy SII Plus Packages
 PRODUCT_PACKAGES += \
 	SamsungServiceMode \
