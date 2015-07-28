@@ -116,4 +116,25 @@ BOARD_SEPOLICY_DIRS += \
     device/samsung/i9105p/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    file_contexts
+    file_contexts \
+    property_contexts \
+    service_contexts \
+    bkmgrd.te \
+    device.te \
+    geomagneticd.te \
+    gpsd.te \
+    init.te \
+    install_recovery.te \
+    kernel.te \
+    macloader.te \
+    netd.te \
+    radio.te \
+    rild.te \
+    shell.te \
+    system_server.te \
+    tvserver.te \
+    untrusted_app.te \
+    vclmk.te \
+    vold.te
+	
+	
