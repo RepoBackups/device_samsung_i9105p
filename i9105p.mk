@@ -5,6 +5,13 @@ LOCAL_PATH := device/samsung/i9105p
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+# GPS
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/configs/gps.cer:system/bin/gps.cer \
+	$(COMMON_PATH)/configs/gps.conf:system/etc/gps.conf \
+	$(COMMON_PATH)/configs/glconfig.xml:system/etc/gps/glconfig.xml
+
+
 # Init scripts
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/ramdisk/init.capri_ss_s2vep.rc:root/init.capri_ss_s2vep.rc \
