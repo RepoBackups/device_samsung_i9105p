@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # CandyRoms Animation Boot
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/480.zip:systen/media/bootanimation.zio
+	$(LOCAL_PATH)/480.zip:system/media/bootanimation.zio
 
 
 # Samsung Galaxy SII Plus Packages
