@@ -1,0 +1,34 @@
+#!/bin/bash
+
+cd ..
+
+COUNT=0
+CURRENT_DIR="$PWD"
+PD="build-tools/patches"
+PATCHES=(
+'bootable/recovery		bootable_recovery.patch'
+'frameworks/av			frameworks_av.patch'
+'frameworks/base		frameworks_base.patch'
+'frameworks/native		frameworks_native.patch'
+'frameworks/opt/telephony	frameworks_opt_telephony.patch'
+'hardware/broadcom/libbt	hardware_broadcom_libbt.patch'
+'packages/apps/Camera2		packages_apps_Camera2.patch'
+'packages/apps/Trebuchet	packages_apps_Trebuchet.patch'
+'packages/services/Telephony	packages_services_Telephony.patch'
+'system/core			system_core.patch'
+'vendor/cm			vendor_cm.patch'
+)
+
+while [ "x${PATCHES[COUNT]}" != "x" ]
+do
+	CURRENT="${PATCHES[COUNT]}"
+	FOLDER=`echo "$CURRENT" | awk '{print $1}'`
+	PATCH=`echo "$CURRENT" | awk '{print $2}'`
+
+	cd "$FOLDER"
+	echo Patching "$FOLDER" ...
+	git apply "$CURRENT_DIR/$PD/$PATCH"
+	cd "$CURRENT_DIR"
+
+	COUNT=$(($COUNT + 1))
+done
