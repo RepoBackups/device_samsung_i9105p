@@ -17,7 +17,7 @@ How to apply Patches? "For Developers only"
 -From terminal, cd to build-tools
 -Fix permissions for patch file with chmod a+x patch.
 -Run ./patch (Patching source should done without problems because are same one used for CyanogenMod, i just remove
-the useless ones to not have any problems.
+the useless ones to not have any problems).
 
 
 Description of scripts:
