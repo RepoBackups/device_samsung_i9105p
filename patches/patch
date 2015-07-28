@@ -14,7 +14,6 @@ PATCHES=(
 'hardware/broadcom/libbt	hardware_broadcom_libbt.patch'
 'packages/apps/Camera2		packages_apps_Camera2.patch'
 'packages/apps/Trebuchet	packages_apps_Trebuchet.patch'
-'packages/services/Telephony	packages_services_Telephony.patch'
 'system/core			system_core.patch'
 )
 
