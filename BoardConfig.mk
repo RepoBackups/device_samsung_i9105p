@@ -50,7 +50,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9105p/include
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/samsung/i9105p/cmhw/
+BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/i9105p/cmhw/
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
