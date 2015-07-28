@@ -29,6 +29,9 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a9
 TARGET_CPU_SMP := true
 
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # File system
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
