@@ -135,7 +135,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 # Inherit device properties
-$(call inherit-product, device/samsung/galaxys2plus-common/properties.mk)
+$(call inherit-product, device/samsung/i9105p/properties.mk)
 
 # Extended JNI checks
 # The extended JNI checks will cause the system to run more slowly, but they can spot a variety of nasty bugs
